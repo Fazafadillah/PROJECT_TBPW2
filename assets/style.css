@@ -83,6 +83,48 @@ body {
     border-radius: 18px;
     padding: 18px;
     box-shadow: 0 8px 24px rgba(2, 6, 23, 0.06);
-    
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+@media (max-width: 800px){
+    .grid {
+        grid-template-columns:1fr;
+    }
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 12px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    outline: none;
+}
+label {
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 10px;
+    display: block;
+}
+
+button {
+    background: var(--green);
+    color: white;
+    border: none;
+    padding: 12px 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    color: var(--muted);
 }
 
