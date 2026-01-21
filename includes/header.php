@@ -20,10 +20,11 @@ if (session_status() === PHP_SESSION_NONE) session_start();
         </div>
 
         <nav class="nav">
-            <a href="/PROJECT_TBPW2/index.php">Home</a>
+           
             <?php if(isset($_SESSION['login']) && $_SESSION['login']===true): ?>
                 <a href="/PROJECT_TBPW2/auth/logout.php" class="btn">Logout</a>
             <?php else: ?>
+                 <a href="/PROJECT_TBPW2/index.php">Home</a>
                 <a href="/PROJECT_TBPW2/auth/login.php" class="btn">Login</a>
             <?php endif; ?>
         </nav>
